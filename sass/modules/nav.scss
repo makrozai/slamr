@@ -1,0 +1,75 @@
+.main-nav{
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 0 0 0 transparent;
+  transition:all .3s;
+
+  &__title{
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: .2em .5em;
+    box-shadow: 0 0 0 4px white;
+    transition:all .3s;
+  }
+  &.scrolling &__title{
+    box-shadow: 0 0 0 4px $negro;
+    color: $negro;
+  }
+
+  &__desktop{
+    &--item a{
+      position: relative;
+      transition:all .3s;
+      &:after{
+        content: "";
+        background: white;
+        position: absolute;
+        width: 0;
+        height: .2em;
+        bottom: 1.5em;
+        left: 50%;
+        transform:translateX(-50%);
+        transition:all .3s;
+      }
+      &:hover{
+        background: transparent;
+        letter-spacing: 1px;
+        color: black;
+      }
+      &:hover:after{
+        width: 100%;
+        background: black;
+      }
+    }
+  }
+  &.scrolling &__desktop{
+    &--item a{
+      color: rgba(black,.6);
+      &:hover{
+        color: $negro;
+      }
+      &:after{
+        bottom: 1em;
+      }
+    }
+  }
+  &.scrolling{
+    background: white;
+    height: 65px;
+    line-height: 65px;
+    box-shadow: 1px 0 5px 0 rgba(black,.5);
+
+    a.button-collapse {
+      color: $negro;
+      height: 65px;
+      i{
+        height: 65px;
+        line-height: 65px;
+      }
+    }
+  }
+}

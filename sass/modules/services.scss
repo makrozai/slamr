@@ -1,0 +1,26 @@
+.main-services{
+  color: #7E8385;
+  padding-bottom: 3em;
+  .main-card{
+    box-shadow: 0 0 0 0 transparent;
+    border: 1px solid #EDEDED;
+    transition:all .3s;
+    &:hover{
+      background-color: #2F3238;
+      color: white;
+    }
+    &:hover  .main-card__title{
+      color: white;
+    }
+    &__title{
+      color: $negro;
+      letter-spacing: 1px;
+      transition:all .3s;
+    }
+    &__description{
+      padding: 0 1.5em;
+      line-height: 1.8;
+      font-weight: 300;
+    }
+  }
+}

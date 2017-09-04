@@ -1,0 +1,17 @@
+.svgcolor-light path {
+    fill: white;
+    stroke: white;
+    stroke-width: 0;
+}
+.main-button__black{
+    background: transparent;
+    color: $negro;
+    box-shadow: 0 0 0 1px $negro;
+    letter-spacing: 1px;
+
+    &:hover{
+      background: $negro;
+      color: white;
+      box-shadow: 0 0 0 1px $negro;
+    }
+  }

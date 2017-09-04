@@ -1,0 +1,51 @@
+main.main
+  .container
+    .row
+      .col.s12
+        h1.main-title.main--title john slamr
+        h2.main-subtitle.main--subtitle Ux Designer. Frontend Developer. Art Director.
+      .col.s12
+        h4.main-title__header Short facts about me
+  .container
+    .row
+      .col.s12.l6
+        ul.main-skills
+          li.main-skill.row
+            .col.s12.m3
+              .main-skill__title Profile
+            .col.s12.m9
+              .main-skill__description UX Designer Frontend developer Art Director
+          li.main-skill.row
+            .col.s12.m3
+              .main-skill__title Social Profiles
+            .col.s12.m9
+              .main-skill__description 
+                a(href="").main-skill__description--icon
+                  i.material-icons camera
+                a(href="").main-skill__description--icon
+                  i.material-icons camera
+                a(href="").main-skill__description--icon
+                  i.material-icons camera
+                a(href="").main-skill__description--icon
+                  i.material-icons camera
+          li.main-skill.row
+            .col.s12.m3
+              .main-skill__title Skills
+            .col.s12.m9.main-skill__content
+              each val in [1, 2, 3, 4, 5, 6]
+                .main-skill__circle
+                  .c100.p50.small
+                    span 12%
+                    .slice
+                      .bar
+                      .fill
+          li.main-skill.row
+            .col.s12.m3
+              .main-skill__title Contact
+            .col.s12.m9
+              a.main-skill__description john@SLAMR.com
+          
+      .col.s12.l6
+        p.main-description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad illo nobis mollitia. Ex nemo quae vero, rem, magnam numquam repudiandae.
+        p.main-description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad illo nobis mollitia. Ex nemo quae vero, rem, magnam numquam repudiandae. Labore laborum officia corporis sint voluptatem est, odio quidem libero.
+        p.main-author Kind Regards.

@@ -1,0 +1,48 @@
+.main-testimonial{
+  background: #F5F5F5;
+  padding: 6em;
+  @media only screen and (max-width: 600px) {
+    padding: 6em 2em;
+  }
+
+  .single-item{
+    margin: 5em 0;
+    height: auto !important;
+    button:before{
+      color: #7E8385;
+      padding: .5em .6em;
+      border-radius: 50%;
+      border: 1px solid #7E8385;
+    }
+    > button{
+      @media only screen and (max-width: 600px) {
+        display: none !important;
+      }
+    }
+    .slick-dots{
+      li{
+        button:before{
+          content: "";
+        border-radius: 50%;
+        border: 1px solid black;
+        transition:all .3s;
+        }
+      }
+    }
+    .slick-slide.slick-active {
+        outline: 0;
+    }
+  }
+  &__item{
+    color: #7E8385;
+    font-weight: 300;
+    padding: 0 3em;
+    text-align: center;
+  }
+  &__image{
+    display: block;
+    margin:0 auto 2em;
+    border-radius: 50%;
+    width: 90px;
+  }
+}

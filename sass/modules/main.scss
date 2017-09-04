@@ -1,0 +1,87 @@
+.main{
+  padding: 7em 0;
+  color: #7E8385;
+  &-title{
+    &__header{
+      text-align: center;
+      color: darken(#ccc,10);
+      font-size: 1.5em;
+      margin-bottom: 3em;
+    }
+  }
+  &-skill{
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+    }
+    &__title{
+      color: rgba(0, 0, 0, 0.87);
+      letter-spacing: 1px;
+      font-size: 1.1em;
+      text-transform: uppercase;
+      @media only screen and (max-width: 600px) {
+        text-align: center;
+        margin: 1em 0 2em;
+        font-weight: 500;
+      }
+    }
+    &__description{
+      &--icon{
+        padding: 0 .3em;
+        i{
+          font-size: 2.2em;
+        }
+      }
+    }
+    &__content{
+      display: flex;
+      flex-wrap:wrap;
+    }
+    &__circle{
+      width: 33.333%;
+      padding: 0 0 .8em;
+      @media only screen and (max-width: 600px) {
+        display: flex;
+
+        > .c100{
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  &-description{
+    line-height: 2.2;
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+    }
+  }
+  &-author{
+    margin-top: 3.5em;
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+    }
+  }
+  &--title{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  &--subtitle{
+    text-align: center;
+    font-size: 1.5em;
+    color: darken(#ccc,10);
+    margin: .5em 0 0;
+    font-weight: 300;
+
+    &:after{
+      content: "";
+      display: block;
+      background: rgba(0, 0, 0, 0.87);
+      height: .15em;
+      margin: 2.5em auto 0;
+      width: 5em;
+    }
+  }
+}

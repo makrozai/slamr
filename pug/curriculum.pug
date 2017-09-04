@@ -1,0 +1,29 @@
+section.main-curriculum
+  .container
+    .row
+      .col.s12
+        h2.main-curriculum__title.main--title Curriculum vitae
+        h3.main-curriculum__subtitle.main--subtitle Get to know where I've proven my skylls
+    .row.main-curriculum__container
+      .col.s12
+        each val in [1, 2]
+          .row.main-curriculum__content
+            .col.s12.m4.l3
+              h5.main-curriculum__content--category education
+            .col.s12.m8.l9
+              each vale in [1, 2]
+                .row
+                  .col.s12.m9.main-curriculum__content--data
+                    h6.main-curriculum__content--title Master of Web Design
+                    h7.main-curriculum__content--subtitle
+                      i.material-icons domain
+                      | St. Patrick University (2 Years Course)
+                    p.main-curriculum__content--description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam cum sit adipisci qui vel, doloremque obcaecati nulla, repellendus dignissimos debitis vero dolore omnis tenetur sapiente minus eos, deserunt magni.
+                  .col.s12.m3
+                    p.main-curriculum__content--date
+                      i.material-icons event
+                      | Graduation May 2013
+      .col.s12
+        a.waves-effect.waves-light.btn-large.main-curriculum__button.main-button__black
+          i.material-icons.left file_download
+          | Download my cv

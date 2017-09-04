@@ -1,0 +1,38 @@
+section.main-contact
+  svg(preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light")
+    path(d="M0 0 L50 100 L100 0 Z")
+  .container
+    .row.center-align
+      .col.s12
+        h3.main-contact__title.main--title GET IN TOUCH
+        h4.main-contact__subtitle.main--subtitle No matter what. Just do it
+      .col.s12
+        h3.main-contact__name John Slamr
+        h4.main-contact__address 795 Folsom Ave, Suite 600 San Francisco, CA 94107 
+        h4.main-contact__phone  P: (123) 456-7890 
+        h4.main-contact__email
+          a mail@SLAMR.com
+      .col.s12
+        .row
+          form.col.s12.main-contact__form
+            .row
+              .input-field.col.s12
+                input#first_name( type="text").validate
+                label(for="first_name") First Name
+            .row
+              .input-field.col.s12
+                input#email(type="email").validate
+                label(for="email") Email
+            .row
+              .input-field.col.s12
+                textarea#textarea1.materialize-textarea
+                label(for="textarea1") Textarea
+            .row
+              .input-field.col.s12.right-align
+                a.waves-effect.waves-light.btn-large.main-contact__button
+                  i.material-icons.left check
+                  | submit
+      .col.s12.main-contact__box
+        each val in [1, 2, 3, 4, 5, 6, 7]
+          a.main-contact__social
+            i.material-icons whatshot

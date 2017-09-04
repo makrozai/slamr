@@ -1,0 +1,25 @@
+section.main-blog
+  .container
+    .row
+      .col.s12
+        h2.main-blog__title.main--title RECENT BLOG POSTS
+        h3.main-blog__subtitle.main--subtitle Go have a look
+      .col.s12.main-blog__content
+        each val in [1, 2, 3]
+          article.row.main-article
+            .col.s12.l6
+              img(src="http://themes.createbrilliance.com/Slamr/theme/img/blog/blog-1.jpg", alt="").main-article__image
+            .col.s12.l6
+              h3.main-article__title BEACH LOVE
+              p.main-article__author
+                i.material-icons person
+                | By John J. Doe
+              p.main-article__description This is the short version of this blog post. You could call it the excerpt. 3 Lines should be enough.
+              .main-article__data
+                spam.main-article__data--date 25/03/14
+                spam.main-article__data--coments 12
+                spam.main-article__data--valor 0
+      .col.s12
+        a.waves-effect.waves-light.btn-large.main-button__black
+          i.material-icons.left remove_red_eye
+          | Show all blog posts

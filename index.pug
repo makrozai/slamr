@@ -1,0 +1,28 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title SLAMR
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    link(rel="stylesheet", href="css/style.css")
+  body
+    include pug/nav
+    include pug/header
+    include pug/main
+    include pug/services
+    include pug/clients
+    include pug/curriculum
+    include pug/sponsor
+    include pug/projects
+    include pug/blog
+    include pug/testimonial
+    include pug/awards
+    include pug/contact
+    include pug/footer
+    
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(src="js/bin/materialize.js")
+    script(src="js/bin/slick.js")
+    script(src="js/bin/jquery.pinto.js")
+    script(src="js/bin/script.js")
