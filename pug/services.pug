@@ -3,9 +3,12 @@ section.main-services
     .row
       .col.s12
         h4.main-title__header Whats I offer
-      each val in [1, 2, 3, 4, 5, 6]
+      - var values = ["code", "comments", "diamond", "network", "coffee", "gamer"]
+      - var count = 0
+      each val in ["Interface Design", "Coaching", "Product Owner", "Seo Specialist", "Coffee Addict", "PC Gamer"]
         .col.s12.m6.l4
           .main-card.card-panel.center-align
-            i.material-icons.large local_bar
-            h5.main-card__title Interface Design
+            i.material-icons.large(class='icon-'+values[count])
+            h5.main-card__title= val
             p.main-card__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, in ex ipsum ut aperiam quis impedit, blanditiis error praesentium voluptatibus
+            - count++

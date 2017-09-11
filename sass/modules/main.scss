@@ -37,14 +37,22 @@
       flex-wrap:wrap;
     }
     &__circle{
-      width: 33.333%;
+      width: 25%;
       padding: 0 0 .8em;
+      display: block;
+      display: flex;
+      flex-direction:column;
+      p{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      > .c100{
+        margin: 0 auto;
+      }
       @media only screen and (max-width: 600px) {
-        display: flex;
-
-        > .c100{
-          margin: 0 auto;
-        }
+        width: 33.333%;
       }
     }
   }
