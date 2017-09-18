@@ -4,35 +4,35 @@ section.main-contact
   .container
     .row.center-align
       .col.s12
-        h3.main-contact__title.main--title GET IN TOUCH
-        h4.main-contact__subtitle.main--subtitle No matter what. Just do it
+        h3.main-contact__title.main--title ponte en contacto
+        h4.main-contact__subtitle.main--subtitle No importa qué. Solo hazlo
       .col.s12
-        h3.main-contact__name John Slamr
+        h3.main-contact__name Marco Condori
         h4.main-contact__address 795 Folsom Ave, Suite 600 San Francisco, CA 94107 
-        h4.main-contact__phone  P: (123) 456-7890 
+        h4.main-contact__phone  P: +51 934 575 282
         h4.main-contact__email
-          a mail@SLAMR.com
+          a marco@makrozai.com
       .col.s12
         .row
           form.col.s12.main-contact__form
             .row
               .input-field.col.s12
                 input#first_name( type="text").validate
-                label(for="first_name") First Name
+                label(for="first_name") Nombre
             .row
               .input-field.col.s12
                 input#email(type="email").validate
-                label(for="email") Email
+                label(for="email") Correo
             .row
               .input-field.col.s12
                 textarea#textarea1.materialize-textarea
-                label(for="textarea1") Textarea
+                label(for="textarea1") Mensaje
             .row
               .input-field.col.s12.right-align
                 a.waves-effect.waves-light.btn-large.main-contact__button
                   i.material-icons.left check
-                  | submit
+                  | enviar
       .col.s12.main-contact__box
-        each val in [1, 2, 3, 4, 5, 6, 7]
+        each val in ["facebook", "twitter", "youtube", "linkedin", "instagram"]
           a.main-contact__social
-            i.material-icons whatshot
+            i.material-icons(class='icon-' + val)

@@ -2,22 +2,22 @@ main.main
   .container
     .row
       .col.s12
-        h1.main-title.main--title john slamr
+        h1.main-title.main--title Marco Condori
         h2.main-subtitle.main--subtitle Ux Designer. Frontend Developer. Art Director.
       .col.s12
-        h4.main-title__header Short facts about me
+        h4.main-title__header Un poco sobre mí
   .container
     .row
       .col.s12.l6
         ul.main-skills
           li.main-skill.row
             .col.s12.m3
-              .main-skill__title Profile
+              .main-skill__title Perfil
             .col.s12.m9
               .main-skill__description UX Designer Frontend developer Art Director
           li.main-skill.row
             .col.s12.m3
-              .main-skill__title Social Profiles
+              .main-skill__title Redes Sociales
             .col.s12.m9
               .main-skill__description 
                 a(href="").main-skill__description--icon
@@ -32,21 +32,24 @@ main.main
                   i.material-icons.icon-instagram
           li.main-skill.row
             .col.s12.m3
-              .main-skill__title Skills
+              .main-skill__title Habilidades
             .col.s12.m9.main-skill__content
-              each val in [1, 2, 3, 4, 5, 6]
+              - var values = ["95","97","73","85","87","73","57","75"];
+              - var counte = 0;
+              each val, index in ["HTML", "CSS", "JS", "PUG", "SCSS", "GIT", "JAVA", "PHP"]
                 .main-skill__circle
-                  .c100.p50.small
-                    span 50%
+                  .c100.small(class='p' + values[counte])
+                    span= values[counte] + "%"
+                    - counte++
                     .slice
                       .bar
                       .fill
-                  p.main-skill__name html
+                  p.main-skill__name= val
           li.main-skill.row
             .col.s12.m3
-              .main-skill__title Contact
+              .main-skill__title Contacto
             .col.s12.m9
-              a.main-skill__description john@SLAMR.com
+              a.main-skill__description marco@makrozai.com
           
       .col.s12.l6
         p.main-description  Soy un joven de 19 años, orientado a desarrollarse en la Carrera de Ingeniería de sistemas e informática. Proactivo, facilidad para relacionarme con diferentes tipos de personas.
