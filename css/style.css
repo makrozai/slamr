@@ -8758,7 +8758,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       opacity: 1; }
 
 .main-projects {
-  padding: 8em 0; }
+  padding: 8em 0 3em; }
   .main-projects #blog-landing {
     max-width: 1000px;
     margin: 4em auto 0; }
@@ -8768,7 +8768,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .main-blog {
   color: #7E8385;
-  padding-bottom: 6em; }
+  padding-bottom: 6em;
+  padding-top: 6em; }
   .main-blog__content .main-article {
     display: -webkit-box;
     display: -webkit-flex;

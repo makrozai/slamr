@@ -3,6 +3,9 @@ $( document ).ready(function(){
     indicators:false
   });
   $(".button-collapse").sideNav();
+  $('.scrollspy').scrollSpy({
+    scrollOffset:0
+  });
 
   $("#blog-landing").pinto({
       itemWidth:250,
