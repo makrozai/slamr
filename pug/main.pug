@@ -28,13 +28,10 @@ main#main.main.scrollspy
             .col.s12.m3
               .main-skill__title Habilidades
             .col.s12.m9.main-skill__content
-              - var values = ["94","97","73","85","87","73","57","75"];
-              - var counte = 0;
-              each val, index in ["HTML", "CSS", "JS", "PUG", "SCSS", "GIT", "JAVA", "PHP"]
-                .main-skill__linear(class='p-' + values[counte])
-                  span.main-skill__linear--name= val
-                  span.main-skill__linear--value= values[counte]
-                  - counte++
+              each skill in skills
+                .main-skill__linear(class='p-' + skill.value)
+                  span.main-skill__linear--name= skill.name
+                  span.main-skill__linear--value= skill.value
                   
                 //.main-skill__circle
                   .c100.small(class='p' + values[counte])

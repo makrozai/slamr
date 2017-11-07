@@ -1974,7 +1974,7 @@ ul:not(.browser-default) {
     list-style-type: none; }
 
 a {
-  color: #039be5;
+  color: #3d5afe;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent; }
 
@@ -8609,6 +8609,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     position: relative; }
     .main-skill__linear--name {
       color: white; }
+    .main-skill__linear--value {
+      color: #3d5afe; }
     .main-skill__linear--name, .main-skill__linear--value {
       position: relative; }
     .main-skill__linear:before {
