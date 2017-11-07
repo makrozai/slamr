@@ -26,9 +26,9 @@
     }
     &__description{
       &--icon{
-        padding: 0 .3em;
+        padding: 0 .5em;
         i{
-          font-size: 2.2em;
+          font-size: 1.5em;
         }
       }
     }
@@ -54,6 +54,41 @@
       @media only screen and (max-width: 600px) {
         width: 33.333%;
       }
+    }
+    &__linear{
+      width: 100%;
+
+      background: lighten($negro,90);
+      margin-bottom:1em;
+      color:$negro;
+      padding:.4em 1em;
+      font-size: .8rem;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      &--name{
+        color:white;
+      }
+      &--name, &--value{
+        position: relative;
+      }
+      &:before{
+        content: "";
+        background: $negro;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+      }
+
+      @for $i from 0 through 100{
+        &.p-#{$i}:before{
+          width: #{$i + '%'};
+        }
+      }
+        
     }
   }
   &-description{

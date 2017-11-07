@@ -1,0 +1,86 @@
+.main {
+  padding: 7em 0;
+  color: #7E8385; }
+  .main-title__header {
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 1.5em;
+    margin-bottom: 3em; }
+  @media only screen and (max-width: 600px) {
+    .main-skill {
+      text-align: center; } }
+  .main-skill__title {
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 600px) {
+      .main-skill__title {
+        text-align: center;
+        margin: 1em 0 2em;
+        font-weight: 500; } }
+  .main-skill__description--icon {
+    padding: 0 .3em; }
+    .main-skill__description--icon i {
+      font-size: 1.5em; }
+  .main-skill__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .main-skill__circle {
+    width: 25%;
+    padding: 0 0 .8em;
+    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .main-skill__circle p {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px; }
+    .main-skill__circle > .c100 {
+      margin: 0 auto; }
+    @media only screen and (max-width: 600px) {
+      .main-skill__circle {
+        width: 33.333%; } }
+  .main-description {
+    line-height: 2.2; }
+    @media only screen and (max-width: 600px) {
+      .main-description {
+        text-align: center; } }
+  .main-author {
+    margin-top: 3.5em; }
+    @media only screen and (max-width: 600px) {
+      .main-author {
+        text-align: center; } }
+  .main--title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.87); }
+  .main--subtitle {
+    text-align: center;
+    font-size: 1.5em;
+    color: #b3b3b3;
+    margin: .5em 0 0;
+    font-weight: 300; }
+    .main--subtitle:after {
+      content: "";
+      display: block;
+      background: rgba(0, 0, 0, 0.87);
+      height: .15em;
+      margin: 2.5em auto 0;
+      width: 5em; }
