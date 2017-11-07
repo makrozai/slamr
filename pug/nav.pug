@@ -5,28 +5,10 @@ nav.main-nav
       a(href="#" data-activates="mobile-demo").button-collapse
         i.material-icons.icon-menu
       ul.right.hide-on-med-and-down.main-nav__desktop
-        li.main-nav__desktop--item
-          a(href="#main") Sobre Mi
-        li.main-nav__desktop--item
-          a(href="#curriculum") Curriculum
-        li.main-nav__desktop--item
-          a(href="#portfolio") Proyectos
-        li.main-nav__desktop--item
-          a(href="#blog") Blog
-        li.main-nav__desktop--item
-          a(href="#awards") Premios
-        li.main-nav__desktop--item
-          a(href="#contact") Contacto
+        each item in menu
+          li.main-nav__desktop--item
+            a(href= item.value)= item.name
     ul.side-nav#mobile-demo.main-nav__mobile
-      li
-        a(href="#main") Sobre Mi
-      li
-        a(href="#curriculum") Curriculum
-      li
-        a(href="#portfolio") Proyectos
-      li
-        a(href="#blog") Blog
-      li
-        a(href="#awards") Premios
-      li
-        a(href="#contact") Contacto
+      each item in menu
+        li
+          a(href= item.value)= item.name

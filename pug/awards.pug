@@ -6,17 +6,13 @@ section#awards.main-awards.scrollspy
         h3.main-awards__subtitle.main--subtitle Algunos reconocimientos que recibí
       .col.s12
     .row.main-awards__content
-      - var description = ["Mejor sitio web CSS del mes.", "Interfaz educativa utilizando API's.", "Orientador en proceso de Votación."];
-      - var received = ["Septiembre 2016", "Octubre 2016", "Abril 2017"];
-      - var count = 0;
-      each val in ["CSS DESIGN AWARD", "UX DESIGNER UCH", "VOLUNTARIO ONPE"]
+      each award in awards
         .col.s12.m6.l4
           .row.main-awards__item
             .col.s12.m2
               a.btn-floating.btn-large.waves-effect.waves-light.main-awards__button
                 i.material-icons add
             .col.s12.m10
-              h5.main-awards__item--title= val
-              p.main-awards__item--description= description[count]
-              p.main-awards__item--received= 'Recibido:' + received[count] 
-              - count++;
+              h5.main-awards__item--title= award.title
+              p.main-awards__item--description= award.description
+              p.main-awards__item--received= 'Recibido:' + award.received
