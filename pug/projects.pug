@@ -6,21 +6,6 @@ section#portfolio.main-projects.scrollspy
         h3.main-projects__subtitle.main--subtitle Proyectos en los que trabajé
       .col.s12
         #blog-landing
-          .main-projects__image.pinto
-            img(src="img/thumb-01.png", alt="").materialboxed
-          .main-projects__image.pinto
-            img(src="img/thumb-02.png", alt="").materialboxed
-          .main-projects__image.pinto
-            img(src="img/thumb-03.png", alt="").materialboxed
-          .main-projects__image.pinto
-            img(src="img/thumb-01.png", alt="").materialboxed
-          .main-projects__image.pinto
-            img(src="img/thumb-02.png", alt="").materialboxed
-          .main-projects__image.pinto
-            img(src="img/thumb-03.png", alt="").materialboxed
-          .main-projects__image.pinto
-            img(src="img/thumb-01.png", alt="").materialboxed
-          .main-projects__image.pinto
-            img(src="img/thumb-02.png", alt="").materialboxed
-          .main-projects__image.pinto
-            img(src="img/thumb-03.png", alt="").materialboxed
+          each project in projects
+            .main-projects__image.pinto
+              img(src= project.image, alt= project.title, data-caption= project.title).materialboxed

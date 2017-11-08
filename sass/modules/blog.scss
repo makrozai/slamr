@@ -60,6 +60,13 @@
     }
     &--valor{
       margin-left: auto;
+      display: flex;
+      align-items:center;
+      i{
+        margin-left: .5em;
+        color: color('red','lighten-1');
+        display: flex;
+      }
     }
     &--date{
       margin-right: 1em;

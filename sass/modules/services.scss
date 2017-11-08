@@ -12,6 +12,9 @@
     &:hover  .main-card__title{
       color: white;
     }
+    &__icon{
+      padding: .2em 0;
+    }
     &__title{
       color: $negro;
       letter-spacing: 1px;

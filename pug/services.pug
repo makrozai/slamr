@@ -3,12 +3,9 @@ section.main-services
     .row
       .col.s12
         h4.main-title__header Whats I offer
-      - var values = ["code", "comments", "diamond", "network", "coffee", "gamer"]
-      - var count = 0
-      each val in ["UX designer", "Networking", "Product Owner", "Seo Analytics", "Educación", "PC Gamer"]
+      each offter in offters
         .col.s12.m6.l4
           .main-card.card-panel.center-align
-            i.material-icons.large(class='icon-'+values[count])
-            h5.main-card__title= val
-            p.main-card__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, in ex ipsum ut aperiam quis impedit, blanditiis error praesentium voluptatibus
-            - count++
+            i.material-icons.medium.main-card__icon(class='icon-'+ offter.icon)
+            h5.main-card__title= offter.title
+            p.main-card__description= offter.description
