@@ -7,8 +7,9 @@ section.main-clients
         h2.main-clients__title.main--title Clientes
         h3.main-clients__subtitle.main--subtitle Algunos Clientes Felices
       .col.s12
+        //-http://themes.createbrilliance.com/Slamr/theme/img/clients/client-01.png
         .slider.responsive.main-clients__carousel
-          each vale in [1, 2, 3, 4, 5, 6, 7 ,8]
+          each client in clients
             div
-              img(src='http://themes.createbrilliance.com/Slamr/theme/img/clients/client-0' + vale + '.png', alt="").main-clients__carousel--image
-              p.main-clients__carousel--title= 'CLIENT ' + vale
+              img(src= client.image, alt="").main-clients__carousel--image
+              p.main-clients__carousel--title= client.title

@@ -8889,7 +8889,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-top: 6em; }
   .main-clients__carousel {
     height: auto !important;
-    margin-top: 8em;
+    margin-top: 3em;
     text-align: center; }
     .main-clients__carousel button:before {
       color: black; }
@@ -8898,7 +8898,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
         display: none !important; } }
     .main-clients__carousel--image {
       display: block;
-      width: 70%;
+      width: 90%;
       margin: 0 auto; }
     .main-clients__carousel--title {
       font-size: 1.1em;

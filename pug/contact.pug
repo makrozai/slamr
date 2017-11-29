@@ -11,7 +11,7 @@ section#contact.main-contact.scrollspy
         h4.main-contact__address 795 Folsom Ave, Suite 600 San Francisco, CA 94107 
         h4.main-contact__phone  P: +51 934 575 282
         h4.main-contact__email
-          a marco@makrozai.com
+          a(href="mailto:marco.condoric@gmail.com") marco.condoric@gmail.com
       .col.s12
         .row
           form.col.s12.main-contact__form
@@ -33,6 +33,6 @@ section#contact.main-contact.scrollspy
                   i.material-icons.left check
                   | enviar
       .col.s12.main-contact__box
-        each val in ["facebook", "twitter", "youtube", "linkedin", "instagram"]
-          a.main-contact__social
-            i.material-icons(class='icon-' + val)
+        each val in social
+          a.main-contact__social(href= val.url ,target="_blank")
+            i.material-icons(class='icon-' + val.title)

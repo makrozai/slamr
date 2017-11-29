@@ -20,10 +20,9 @@ main#main.main.scrollspy
               .main-skill__title Redes Sociales
             .col.s12.m9
               .main-skill__description 
-                - var social = ["facebook","twitter","youtube","linkedin","instagram"];
-                each soc in social
-                  a(href="").main-skill__description--icon
-                    i(class='material-icons icon-'+soc)
+                each item in social
+                  a(href=item.url target='_blank').main-skill__description--icon
+                    i(class='material-icons icon-'+ item.title)
           li.main-skill.row
             .col.s12.m3
               .main-skill__title Habilidades
@@ -33,7 +32,7 @@ main#main.main.scrollspy
                   span.main-skill__linear--name= skill.name
                   span.main-skill__linear--value= skill.value
                   
-                //.main-skill__circle
+                //-.main-skill__circle
                   .c100.small(class='p' + values[counte])
                     span= values[counte] + "%"
                     - counte++
@@ -45,9 +44,9 @@ main#main.main.scrollspy
             .col.s12.m3
               .main-skill__title Contacto
             .col.s12.m9
-              a.main-skill__description marco@makrozai.com
+              a.main-skill__description(href="mailto:marco.condoric@gmail.com") marco.condoric@gmail.com
           
       .col.s12.l6
-        p.main-description  Soy un joven de 19 años, orientado a desarrollarse en la Carrera de Ingeniería de sistemas e informática. Proactivo, facilidad para relacionarme con diferentes tipos de personas.
-        p.main-description  Orientado a trabajar en equipo, y bajo presión, desarrollándome y motivándome para el logro de mis metas. Con la finalidad de aprender, afianzar mis conocimientos, brindar aportes y comprometerme con los objetivos de la institución así como las actividades laborales.
+        p.main-description  Hola! tengo 20 años, soy estudiante en la carrera de ingeniería de sistema e informática, me considero una persona responsable,dinámica y creativa, con facilidad de adaptación y capacidad de trabajar en equipo, con iniciativa para resolver problemas eficientemente, lograr las metas y objetivos trazados.
+        p.main-description  Por otro lado soy un amante de la educación, es por ello que en mis tiempos libres me dedico a compartir lo que sé sea en mi canal o mediante talleres relacionados al desarrollo de nuevas tecnologias.
         p.main-author Kind Regards.
