@@ -9176,7 +9176,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     padding: 2.5em;
     border-radius: 2px; }
   .main-contact__button {
-    display: block; }
+    display: block;
+    width: 100%; }
   .main-contact__box {
     display: -webkit-box;
     display: -webkit-flex;

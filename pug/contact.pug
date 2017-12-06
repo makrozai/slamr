@@ -14,22 +14,22 @@ section#contact.main-contact.scrollspy
           a(href="mailto:marco.condoric@gmail.com") marco.condoric@gmail.com
       .col.s12
         .row
-          form.col.s12.main-contact__form
+          form.col.s12.main-contact__form#myform
             .row
               .input-field.col.s12
-                input#first_name( type="text").validate
+                input#first_name( type="text" name="name").validate
                 label(for="first_name") Nombre
             .row
               .input-field.col.s12
-                input#email(type="email").validate
+                input#email(type="email" name="email").validate
                 label(for="email") Correo
             .row
               .input-field.col.s12
-                textarea#textarea1.materialize-textarea
+                textarea#textarea1.materialize-textarea(name="message")
                 label(for="textarea1") Mensaje
             .row
               .input-field.col.s12.right-align
-                a.waves-effect.waves-light.btn-large.main-contact__button
+                button.waves-effect.waves-light.btn-large.main-contact__button
                   i.material-icons.left check
                   | enviar
       .col.s12.main-contact__box
