@@ -3,7 +3,7 @@ section#awards.main-awards.scrollspy
     .row
       .col.s12
         h2.main-awards__title.main--title Premios
-        h3.main-awards__subtitle.main--subtitle Algunos reconocimientos que recibí
+        p.main-awards__subtitle.main--subtitle Algunos reconocimientos que recibí
       .col.s12
     .row.main-awards__content
       each award in awards
@@ -13,6 +13,6 @@ section#awards.main-awards.scrollspy
               a.btn-floating.btn-large.waves-effect.waves-light.main-awards__button
                 i.material-icons add
             .col.s12.m10
-              h5.main-awards__item--title= award.title
+              h3.main-awards__item--title= award.title
               p.main-awards__item--description= award.description
               p.main-awards__item--received= 'Recibido:' + award.received

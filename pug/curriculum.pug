@@ -3,18 +3,18 @@ section#curriculum.main-curriculum.scrollspy
     .row
       .col.s12
         h2.main-curriculum__title.main--title Curriculum vitae
-        h3.main-curriculum__subtitle.main--subtitle Algunos lugares donde probé mis Habilidades
+        p.main-curriculum__subtitle.main--subtitle Algunos lugares donde probé mis Habilidades
     .row.main-curriculum__container
       .col.s12
           .row.main-curriculum__content
             .col.s12.m4.l3
-              h5.main-curriculum__content--category Educación
+              h3.main-curriculum__content--category Educación
             .col.s12.m8.l9
               each curse in education
                 .row
                   .col.s12.m9.main-curriculum__content--data
-                    h6.main-curriculum__content--title= curse.title
-                    h7.main-curriculum__content--subtitle
+                    h4.main-curriculum__content--title= curse.title
+                    h5.main-curriculum__content--subtitle
                       i.material-icons domain
                       | #{curse.address}
                     p.main-curriculum__content--description= curse.description
@@ -24,13 +24,13 @@ section#curriculum.main-curriculum.scrollspy
                       | #{curse.graduation}
           .row.main-curriculum__content
             .col.s12.m4.l3
-              h5.main-curriculum__content--category Experiencia
+              h3.main-curriculum__content--category Experiencia
             .col.s12.m8.l9
               each exp in experience
                 .row
                   .col.s12.m9.main-curriculum__content--data
-                    h6.main-curriculum__content--title= exp.title
-                    h7.main-curriculum__content--subtitle
+                    h4.main-curriculum__content--title= exp.title
+                    h5.main-curriculum__content--subtitle
                       i.material-icons domain
                       | #{exp.address}
                     p.main-curriculum__content--description= exp.description

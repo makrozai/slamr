@@ -17,7 +17,9 @@
     }
     &__title{
       color: $negro;
+      margin: 0.82rem 0 0.656rem 0;
       letter-spacing: 1px;
+      font-size: 1.64rem;
       transition:all .3s;
     }
     &__description{

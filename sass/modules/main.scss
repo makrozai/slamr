@@ -109,6 +109,7 @@
   &--title{
     text-align: center;
     font-size: 2.5em;
+
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
@@ -116,7 +117,8 @@
   }
   &--subtitle{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+
     color: darken(#ccc,10);
     margin: .5em 0 0;
     font-weight: 300;

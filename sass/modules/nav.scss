@@ -8,12 +8,16 @@
 
   &__title{
     font-weight: 700;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     letter-spacing: 1px;
     text-align: center;
     padding: .2em .5em;
     box-shadow: 0 0 0 4px white;
     transition:all .3s;
+  }
+  &__logo{
+    display: inline-block;
+    margin: 0;
   }
   &.scrolling &__title{
     box-shadow: 0 0 0 4px $negro;
