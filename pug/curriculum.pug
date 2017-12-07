@@ -8,7 +8,7 @@ section#curriculum.main-curriculum.scrollspy
       .col.s12
           .row.main-curriculum__content
             .col.s12.m4.l3
-              h5.main-curriculum__content--category Education
+              h5.main-curriculum__content--category Educación
             .col.s12.m8.l9
               each curse in education
                 .row
@@ -24,7 +24,7 @@ section#curriculum.main-curriculum.scrollspy
                       | #{curse.graduation}
           .row.main-curriculum__content
             .col.s12.m4.l3
-              h5.main-curriculum__content--category Experience
+              h5.main-curriculum__content--category Experiencia
             .col.s12.m8.l9
               each exp in experience
                 .row
@@ -39,6 +39,6 @@ section#curriculum.main-curriculum.scrollspy
                       i.material-icons event
                       | #{exp.graduation}
       .col.s12
-        a.waves-effect.waves-light.btn-large.main-curriculum__button.main-button__black
+        a(href="img/marcoFree.pdf" target="_blank").waves-effect.waves-light.btn-large.main-curriculum__button.main-button__black
           i.material-icons.left file_download
           | Descargar mi cv
