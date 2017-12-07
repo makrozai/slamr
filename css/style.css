@@ -8978,6 +8978,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding: 6em 0; }
   .main-sponsor__title {
     margin-top: 0;
+    margin-bottom: 1rem;
     font-size: 3em;
     letter-spacing: 2px; }
   .main-sponsor__button {
@@ -9238,3 +9239,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       letter-spacing: .5px; }
       .main-footer__website:hover:after {
         width: 100%; }
+
+.u-margin__none {
+  margin: 0; }
