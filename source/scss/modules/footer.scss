@@ -1,0 +1,37 @@
+.main-footer{
+  background: rgba(black,.9);
+  color: #aaa;
+  font-weight: 300;
+  .row{
+    margin-bottom: 0;
+    padding: 1.5em;
+  }
+  &__author{
+    font-weight: 700;
+  }
+  &__copy{
+    margin: 0 .5em;
+  }
+  &__website{
+    position: relative;
+    transition:all .3s;
+
+    &:after{
+      content: "";
+      width: 0;
+      height: 2px;
+      background: $secondary-color;
+      position: absolute;
+      bottom: -7px;
+      left: 50%;
+      transform:translateX(-50%);
+      transition:all .3s;
+    }
+    &:hover{
+      letter-spacing: .5px;
+      &:after{
+        width: 100%;
+      }
+    }
+  }
+}
