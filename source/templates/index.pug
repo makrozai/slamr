@@ -1,0 +1,27 @@
+include settings/variables
+doctype html
+html(lang="es")
+  head
+    
+    include blocks/head
+  body
+    include components/nav
+    include components/header
+    include components/main
+    include components/services
+    include components/clients
+    include components/curriculum
+    include components/sponsor
+    include components/projects
+    //-include components/blog
+    include components/testimonial
+    include components/awards
+    include components/contact
+    include components/footer
+    
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(src="js/bin/materialize.js")
+    script(src="js/bin/slick.js")
+    script(src="js/bin/jquery.pinto.js")
+    script(src="https://cdn.emailjs.com/dist/email.min.js")
+    script(src="js/bin/script.js")

@@ -1,0 +1,11 @@
+section.main-services
+  .container
+    .row
+      .col.s12
+        h2.main-title__header Cosas que hago
+      each offter in offters
+        .col.s12.m6.l4
+          .main-card.card-panel.center-align
+            i.material-icons.medium.main-card__icon(class='icon-'+ offter.icon)
+            h3.main-card__title= offter.title
+            p.main-card__description= offter.description

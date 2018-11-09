@@ -1,0 +1,38 @@
+section#contact.main-contact.scrollspy
+  svg(viewBox="0 0 100 102" height="100" width="100%" class="svgcolor-light")
+    path(d="M0 0 L50 100 L100 0 Z")
+  .container
+    .row.center-align
+      .col.s12
+        p.main-contact__title.main--title ponte en contacto
+        p.main-contact__subtitle.main--subtitle No importa qué. Solo hazlo
+      .col.s12
+        h3.main-contact__name Marco Condori
+        h4.main-contact__address 795 Folsom Ave, Suite 600 San Francisco, CA 94107 
+        h4.main-contact__phone  P: +51 934 575 282
+        h4.main-contact__email
+          a(href="mailto:marco.condoric@gmail.com") marco.condoric@gmail.com
+      .col.s12
+        .row
+          form.col.s12.main-contact__form#myform
+            .row
+              .input-field.col.s12
+                input#first_name( type="text" name="name").validate
+                label(for="first_name") Nombre
+            .row
+              .input-field.col.s12
+                input#email(type="email" name="email").validate
+                label(for="email") Correo
+            .row
+              .input-field.col.s12
+                textarea#textarea1.materialize-textarea(name="message")
+                label(for="textarea1") Mensaje
+            .row
+              .input-field.col.s12.right-align
+                button.waves-effect.waves-light.btn-large.main-contact__button
+                  i.material-icons.left check
+                  | enviar
+      .col.s12.main-contact__box
+        each val in social
+          a.main-contact__social(href= val.url ,target="_blank")
+            i.material-icons(class='icon-' + val.title)

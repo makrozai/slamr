@@ -1,0 +1,11 @@
+section#portfolio.main-projects.scrollspy
+  .container
+    .row
+      .col.s12
+        h2.main-projects__title.main--title PROYECTOS
+        p.main-projects__subtitle.main--subtitle Proyectos en los que trabajé
+      .col.s12
+        #blog-landing
+          each project in projects
+            .main-projects__image.pinto
+              img(src= project.image, alt= project.title,).materialboxed
